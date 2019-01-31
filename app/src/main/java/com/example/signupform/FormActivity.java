@@ -29,11 +29,11 @@ public class FormActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //check if all fields are filled
                 if(!txtName.getText().toString().matches("") && !txtEmail.getText().toString().matches("")
                         && !txtPassword.getText().toString().matches("") && !txtPasswordConfirm.getText().toString().matches("")){
 
-
+                    //check if passwords match
                     if(txtPassword.getText().toString().matches(txtPasswordConfirm.getText().toString())){
                         Toast.makeText(getApplicationContext(),"Welcome " + txtName.getText().toString() + ", to the Sign Up Form app.",Toast.LENGTH_SHORT).show();
                     }
