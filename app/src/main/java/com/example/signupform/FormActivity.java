@@ -41,6 +41,7 @@ public class FormActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Your passwords do not match",Toast.LENGTH_SHORT).show();
                     }
                 }
+                //alert user if all fields are not filled out
                 else{
                     Toast.makeText(getApplicationContext(),"You must fill out all fields before creating the account",Toast.LENGTH_SHORT).show();
                 }
